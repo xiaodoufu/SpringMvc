@@ -20,7 +20,14 @@
     <!--配置默认的处理器映射器-->
     <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
 
-    <!--用户hello请求对应的bean-->
-   <bean id="/hello"  class="com.xdf.controller.HelloController"/>
+      <!--用户hello请求对应的bean-->
+    <bean id="/hello"  class="com.xdf.controller.HelloController"/>
+
+
+    <!--配置视图解析器   把后台的逻辑视图解析成物理视图-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+         <property name="prefix" value="/WEB-INF/jsp/"/><!--前缀-->
+         <property name="suffix" value=".jsp"/><!--后缀-->
+    </bean>
 
 </beans>

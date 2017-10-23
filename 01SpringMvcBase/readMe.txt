@@ -95,5 +95,25 @@ springMVC:
         005.所以执行Controller的handleRequest就是执行HelloController中的handleRequestInternal（）
 
 
+三：配置视图解析器
+    为什么？
+    01.我们controller中肯定会返回很多页面
+    02.页面的前缀/WEB-INF  ==>安全
+    03.后缀都是以.jsp结尾
 
+    我们现在统一把所有的前缀和后缀写在一个地方！
+    只要是后台有返回页面，我会自动的给页面加前缀和后缀！
+    这时候就需要我们配置视图解析器
+
+
+    有疑问？
+    通关观察dispatcherServlet.properties文件我们看到了有默认的试图解析器
+    就是InternalResourceViewResolver！
+    那为什么我们还需要设置？
+    因为我们需要对InternalResourceViewResolver视图解析器中的属性赋值！
+
+   InternalResourceViewResolver的父类中 UrlBasedViewResolver的属性没有值
+
+        private String prefix = "";
+    	private String suffix = "";
 

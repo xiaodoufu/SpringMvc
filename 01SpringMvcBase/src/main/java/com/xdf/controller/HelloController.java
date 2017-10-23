@@ -25,6 +25,6 @@ public class HelloController  extends AbstractController{
      */
     protected ModelAndView handleRequestInternal(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws Exception {
         System.out.println("进入了我们第一个SpringMvc");
-        return new ModelAndView("/WEB-INF/jsp/hello.jsp");
+        return new ModelAndView("hello");  //逻辑试图名称
     }
 }
