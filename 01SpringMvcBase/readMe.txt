@@ -117,3 +117,36 @@ springMVC:
         private String prefix = "";
     	private String suffix = "";
 
+
+四:静态资源的访问
+   问题的引入：
+
+  01.我们在web.xml文件中配置核心控制器的url-pattern是什么？  是  /
+  02./  不能匹配 .jsp  .js .css  .png....后缀路径
+  03.如果我们项目中需要这些文件，是不能使用的！
+
+  所以需要设置允许静态资源的访问！
+
+   解决方式3种
+
+   01.去tomcat服务器中找到conf/web.xml中有如下配置
+       <servlet-mapping>
+           <servlet-name>default</servlet-name>
+           <url-pattern>/</url-pattern>   不会匹配静态文件
+       </servlet-mapping>
+
+    在web.xml文件中配置
+    <servlet-mapping>
+      <servlet-name>default</servlet-name>
+      <url-pattern>*.jpg</url-pattern>
+    </servlet-mapping>
+
+    问题？
+    如果我们的图片后缀比较多！那么我们的web.xml文件中的节点是不是很多！
+
+
+   02.在springmvc核心配置文件中配置   推荐使用
+       注释掉web.xml文件中的配置
+
+   03.在springmvc核心配置文件中配置
+     <mvc:default-servlet-handler/>
