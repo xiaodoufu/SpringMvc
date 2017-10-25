@@ -7,6 +7,8 @@
   <version>1.0-SNAPSHOT</version>
   <modules>
     <module>01SpringMvcBase</module>
+      <module>UrlPatternDemo</module>
+      <module>02Url_Pattern</module>
   </modules>
   <name>SpringMvc Maven Webapp</name>
   <url>http://maven.apache.org</url>

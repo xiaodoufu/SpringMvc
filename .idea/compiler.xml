@@ -7,11 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="01SpringMvcBase" />
+        <module name="02Url_Pattern" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="01SpringMvcBase" target="1.5" />
+      <module name="02Url_Pattern" target="1.5" />
       <module name="SpringMvc" target="1.5" />
+      <module name="UrlPatternDemo" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
