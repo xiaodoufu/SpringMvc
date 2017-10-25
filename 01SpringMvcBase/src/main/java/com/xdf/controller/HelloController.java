@@ -27,4 +27,6 @@ public class HelloController  extends AbstractController{
         System.out.println("进入了我们第一个SpringMvc");
         return new ModelAndView("hello");  //逻辑试图名称
     }
+
+
 }

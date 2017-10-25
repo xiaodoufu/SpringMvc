@@ -8,7 +8,6 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/tomcat/tomcat-util/5.5.23/tomcat-util-5.5.23-sources.jar!/" />
-      <root url="jar://$MAVEN_REPOSITORY$/tomcat/tomcat-util/5.5.23/tomcat-util-5.5.23.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -9,6 +9,7 @@
     <module>01SpringMvcBase</module>
       <module>UrlPatternDemo</module>
       <module>02Url_Pattern</module>
+      <module>03SpringMvcMoreMethod</module>
   </modules>
   <name>SpringMvc Maven Webapp</name>
   <url>http://maven.apache.org</url>
