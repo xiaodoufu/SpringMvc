@@ -28,6 +28,36 @@ private MethodNameResolver methodNameResolver = new InternalPathMethodNameResolv
 05.所以我们只需要设置UserController中的methodNameResolver
    让这个===ParameterMethodNameResolver
 
+
+
+还可以使用 SimpleUrlHandlerMapping来根据用户的url匹配方法
+
+有个疑问！前台传递来的url名称必须和方法名一致！
+要是不一致呢？
+
+前台     后台
+add   ==>addUser
+使用解析器来让 前台的key 对应我们的 value
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 第二个问题： 解决 springmvc核心xml文件的位置问题！
 
 01.在DispatcherServlet类中查询 contextConfigLocation属性
