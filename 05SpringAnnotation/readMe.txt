@@ -45,3 +45,23 @@ value本身就是一个数组
  springmvc!  Filter不用我们自己书写！
 
 Filter需要配置在web.xml文件中
+
+
+前端接收后台的参数
+
+01.通过request.getParameter(name)
+    name就是前端的name属性值
+02.在后台的方法参数中加上name属性值
+03.在前台传递一个对象
+
+如果前台的name属性值和后台参数不一致？？？
+使用@RequestParame("前端的name属性值")
+
+之前我们的url都是这样的。。。。
+user/delete?id=1
+
+现在是把参数放在了路径中
+user/delete/1
+user/1/delete
+只需要在后台定义这个路径规则！
+然后前台在传递值的时候会默认匹配我们书写的规则！
