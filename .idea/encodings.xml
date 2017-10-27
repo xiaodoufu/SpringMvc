@@ -3,12 +3,9 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/01SpringMvcBase" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/01SpringMvcBase" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/02Url_Pattern" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/02Url_Pattern" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/03SpringMvcMoreMethod" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/03SpringMvcMoreMethod" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/04SpringResolver" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/04SpringResolver" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05SpringAnnotation" charset="UTF-8" />
   </component>
 </project>

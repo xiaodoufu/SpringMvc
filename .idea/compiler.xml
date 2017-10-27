@@ -14,6 +14,7 @@
         <module name="03SpringMvcMoreMethod (1)" />
         <module name="04SpringResolver" />
         <module name="04SpringResolver (1)" />
+        <module name="05SpringAnnotation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -25,6 +26,7 @@
       <module name="03SpringMvcMoreMethod (1)" target="1.5" />
       <module name="04SpringResolver" target="1.5" />
       <module name="04SpringResolver (1)" target="1.5" />
+      <module name="05SpringAnnotation" target="1.5" />
       <module name="SpringMvc" target="1.5" />
       <module name="SpringMvc (1)" target="1.5" />
       <module name="UrlPatternDemo" target="1.5" />

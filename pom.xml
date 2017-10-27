@@ -10,6 +10,7 @@
       <module>02Url_Pattern</module>
       <module>03SpringMvcMoreMethod</module>
       <module>04SpringResolver</module>
+      <module>05SpringAnnotation</module>
   </modules>
   <name>SpringMvc Maven Webapp</name>
   <url>http://maven.apache.org</url>
