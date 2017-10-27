@@ -21,7 +21,14 @@
 <a  href="model/add">新增</a>
 <a  href="model/update">修改</a> <br/>
 <%-- 03.验证后台通配符的使用--%>
-<a  href="model/a/delete">删除</a>
+<a  href="model/a/delete">删除</a><br/>
+<%-- 04.前端传递参数--%>
+<form action="params/haha" method="post">
+   用户名： <input name="userName">
+   密码： <input type="password" name="password">
+     <input type="submit" value="注册">
+</form>
+
 
 </body>
 </html>
