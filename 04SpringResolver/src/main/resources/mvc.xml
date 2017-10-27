@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+
+    <!-- 配置参数 方法名称解析器-->
+    <bean id="paramter" class="org.springframework.web.servlet.mvc.multiaction.ParameterMethodNameResolver">
+        <property name="paramName" value="methodName"/>
+    </bean>
+
+    <!--用户hello请求对应的bean-->
+    <bean id="/userController"  class="com.xdf.controller.UserController">
+        <property name="methodNameResolver" ref="paramter"/>
+    </bean>
+
+
+
+    <!--01.配置默认的视图解析器   把后台的逻辑视图解析成物理视图
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <property name="suffix" value=".jsp"/>
+          <property name="order" value="3"/>
+    </bean>-->
+
+    <!--021.使用视图  org.springframework.web.servlet.view.JstlView
+      后台controller中返回的逻辑视图名称和 id对应
+      url对应的就是物理视图
+     弊端 ： 如果bean很多  不便于管理
+
+    <bean id="add" class="org.springframework.web.servlet.view.JstlView">
+        <property name="url" value="/WEB-INF/jsp/success.jsp"/>
+    </bean>
+    <bean id="del" class="org.springframework.web.servlet.view.JstlView">
+        <property name="url" value="/WEB-INF/jsp/success.jsp"/>
+    </bean>
+    <bean id="update" class="org.springframework.web.servlet.view.JstlView">
+        <property name="url" value="/WEB-INF/jsp/success.jsp"/>
+    </bean>
+    <bean id="select" class="org.springframework.web.servlet.view.JstlView">
+        <property name="url" value="/WEB-INF/jsp/success.jsp"/>
+    </bean>
+     配置视图解析器
+   <bean class="org.springframework.web.servlet.view.BeanNameViewResolver"/>
+-->
+
+    <!--022 把所有的bean放进一个xml文件中 统一管理
+   <bean  class="org.springframework.web.servlet.view.XmlViewResolver">
+       <property name="location"  value="classpath:myViews.xml"/>
+         <property name="order" value="2"/>
+    </bean>
+-->
+
+       <!--023 把所有的bean放进一个properties文件中 统一管理-->
+     <bean class="org.springframework.web.servlet.view.ResourceBundleViewResolver">
+         <property name="basename" value="myView"/>
+         <property name="order" value="1"/>
+     </bean>
+
+</beans>

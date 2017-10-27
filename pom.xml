@@ -7,9 +7,9 @@
   <version>1.0-SNAPSHOT</version>
   <modules>
     <module>01SpringMvcBase</module>
-      <module>UrlPatternDemo</module>
       <module>02Url_Pattern</module>
       <module>03SpringMvcMoreMethod</module>
+      <module>04SpringResolver</module>
   </modules>
   <name>SpringMvc Maven Webapp</name>
   <url>http://maven.apache.org</url>
@@ -23,5 +23,19 @@
   </dependencies>
   <build>
     <finalName>SpringMvc</finalName>
+    <plugins>
+      <!--下面是将应用打包发布需要增加的插件-->
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>repackage</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
   </build>
 </project>

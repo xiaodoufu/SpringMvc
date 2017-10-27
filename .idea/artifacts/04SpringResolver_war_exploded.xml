@@ -1,10 +1,10 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="01SpringMvcBase:war exploded">
-    <output-path>$PROJECT_DIR$/01SpringMvcBase/target/01SpringMvcBase</output-path>
+  <artifact type="exploded-war" name="04SpringResolver:war exploded">
+    <output-path>$PROJECT_DIR$/04SpringResolver/target/04SpringResolver</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="01SpringMvcBase" />
+          <element id="module-output" name="04SpringResolver" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
@@ -30,9 +30,9 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/01SpringMvcBase/target/01SpringMvcBase/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/04SpringResolver/target/04SpringResolver/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="01SpringMvcBase/web/Web" />
+      <element id="javaee-facet-resources" facet="04SpringResolver/web/Web" />
     </root>
   </artifact>
 </component>

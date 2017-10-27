@@ -7,15 +7,26 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="01SpringMvcBase" />
+        <module name="01SpringMvcBase (1)" />
         <module name="02Url_Pattern" />
+        <module name="02Url_Pattern (1)" />
         <module name="03SpringMvcMoreMethod" />
+        <module name="03SpringMvcMoreMethod (1)" />
+        <module name="04SpringResolver" />
+        <module name="04SpringResolver (1)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="01SpringMvcBase" target="1.5" />
+      <module name="01SpringMvcBase (1)" target="1.5" />
       <module name="02Url_Pattern" target="1.5" />
+      <module name="02Url_Pattern (1)" target="1.5" />
       <module name="03SpringMvcMoreMethod" target="1.5" />
+      <module name="03SpringMvcMoreMethod (1)" target="1.5" />
+      <module name="04SpringResolver" target="1.5" />
+      <module name="04SpringResolver (1)" target="1.5" />
       <module name="SpringMvc" target="1.5" />
+      <module name="SpringMvc (1)" target="1.5" />
       <module name="UrlPatternDemo" target="1.5" />
     </bytecodeTargetLevel>
   </component>
