@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/03SpringMvcMoreMethod/03SpringMvcMoreMethod.iml" filepath="$PROJECT_DIR$/03SpringMvcMoreMethod/03SpringMvcMoreMethod.iml" />
       <module fileurl="file://$PROJECT_DIR$/04SpringResolver/04SpringResolver.iml" filepath="$PROJECT_DIR$/04SpringResolver/04SpringResolver.iml" />
       <module fileurl="file://$PROJECT_DIR$/05SpringAnnotation/05SpringAnnotation.iml" filepath="$PROJECT_DIR$/05SpringAnnotation/05SpringAnnotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07SpringException/07SpringException.iml" filepath="$PROJECT_DIR$/07SpringException/07SpringException.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringMvc (1).iml" filepath="$PROJECT_DIR$/SpringMvc (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/_06SpringForward_Redirect/_06SpringForward_Redirect.iml" filepath="$PROJECT_DIR$/_06SpringForward_Redirect/_06SpringForward_Redirect.iml" />
     </modules>

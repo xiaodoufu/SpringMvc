@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="07SpringException:war">
+    <output-path>$PROJECT_DIR$/07SpringException/target</output-path>
+    <root id="archive" name="07SpringException.war">
+      <element id="artifact" artifact-name="07SpringException:war exploded" />
+    </root>
+  </artifact>
+</component>
