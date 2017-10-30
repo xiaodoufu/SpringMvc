@@ -1,4 +1,4 @@
-package com.xdf.controller.bean;
+package com.xdf.controller;
 
 /**
  * 前台需要传递的对象

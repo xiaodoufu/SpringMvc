@@ -27,6 +27,7 @@
       <module name="04SpringResolver" target="1.5" />
       <module name="04SpringResolver (1)" target="1.5" />
       <module name="05SpringAnnotation" target="1.5" />
+      <module name="06SpringRedirect" target="1.5" />
       <module name="SpringMvc" target="1.5" />
       <module name="SpringMvc (1)" target="1.5" />
       <module name="UrlPatternDemo" target="1.5" />

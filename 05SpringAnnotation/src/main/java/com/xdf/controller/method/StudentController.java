@@ -1,6 +1,6 @@
 package com.xdf.controller.method;
 
-import com.xdf.controller.bean.Student;
+import com.xdf.controller.Student;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

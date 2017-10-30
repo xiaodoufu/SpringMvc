@@ -24,9 +24,9 @@
     <context:component-scan base-package="com.xdf.controller"/>
 
 
-    <!--配置默认的视图解析器   把后台的逻辑视图解析成物理视图-->
+    <!--配置默认的视图解析器   把后台的逻辑视图解析成物理视图
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/jsp/"/>
         <property name="suffix" value=".jsp"/>
-    </bean>
+    </bean>-->
 </beans>
