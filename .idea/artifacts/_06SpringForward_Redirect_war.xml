@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="_06SpringForward_Redirect:war">
+    <output-path>$PROJECT_DIR$/_06SpringForward_Redirect/target</output-path>
+    <root id="archive" name="06SpringForward_Redirect.war">
+      <element id="artifact" artifact-name="_06SpringForward_Redirect:war exploded" />
+    </root>
+  </artifact>
+</component>

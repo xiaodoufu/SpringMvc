@@ -1,4 +1,4 @@
-package com.xdf.controller.bean;
+package com.xdf.controller;
 
 
 import org.springframework.stereotype.Controller;
@@ -8,7 +8,6 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
 
 @Controller
 @RequestMapping("/redirectUser")
@@ -30,9 +29,9 @@ public class UserRedirectController {
     @RequestMapping("/add")
     public String add(){
         System.out.println("进入了=====》add");
-       /* return "redirect";  默认转发*/
-      /*  return "redirect:addUser"; *///重定向
-         return "forward:/WEB-INF/jsp/addUser.jsp";  //转发
+      /* return "addUser";  默认转发  执行视图解析器*/
+      /* return "redirect:addUser"; 重定向*/
+          return "forward:/WEB-INF/jsp/addUser.jsp";  //转发
     }
 
     //真正的新增
@@ -45,6 +44,7 @@ public class UserRedirectController {
     /*    return "redirect:userList";  重定向到当前controller中方法 */
     return  "forward:/pet/list";
     }
+
 
 
     @RequestMapping("/userList")

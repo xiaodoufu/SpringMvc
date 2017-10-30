@@ -11,6 +11,7 @@
       <module>03SpringMvcMoreMethod</module>
       <module>04SpringResolver</module>
       <module>05SpringAnnotation</module>
+    <module>_06SpringForward_Redirect</module>
   </modules>
   <name>SpringMvc Maven Webapp</name>
   <url>http://maven.apache.org</url>
@@ -24,8 +25,8 @@
   </dependencies>
   <build>
     <finalName>SpringMvc</finalName>
-    <plugins>
-      <!--下面是将应用打包发布需要增加的插件-->
+   <!-- <plugins>
+      &lt;!&ndash;下面是将应用打包发布需要增加的插件&ndash;&gt;
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
@@ -37,6 +38,6 @@
           </execution>
         </executions>
       </plugin>
-    </plugins>
+    </plugins>-->
   </build>
 </project>

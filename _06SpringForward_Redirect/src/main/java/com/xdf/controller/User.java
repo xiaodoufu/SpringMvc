@@ -1,6 +1,6 @@
-package com.xdf.controller.bean;
+package com.xdf.controller;
 
-public class User {
+public class  User{
     private  String name;
     private  int  age;
 

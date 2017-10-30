@@ -1,4 +1,4 @@
-package com.xdf.controller.bean;
+package com.xdf.controller;
 
 
 import org.springframework.stereotype.Controller;
