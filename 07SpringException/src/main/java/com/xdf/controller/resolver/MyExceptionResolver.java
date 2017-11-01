@@ -8,6 +8,9 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * 自定义的异常处理器
+ */
 public class MyExceptionResolver implements HandlerExceptionResolver {
     /**
      * @param request  请求

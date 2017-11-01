@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping("/user")
-public class UserController {
+public class UserController extends   BaseController {
 
     @RequestMapping("/add")
     public String addUser(User user) throws  UserException{
@@ -21,7 +21,7 @@ public class UserController {
         if (0>user.getAge()){
             throw  new AgeException("年龄错误");
         }
-        System.out.println(5/0);
+        System.out.println(5/0);  //模拟默认异常
          return "forward:userMain";
     }
     @RequestMapping("/userMain")

@@ -41,9 +41,8 @@
     </bean>-->
 
 
-<!--配置自定义的异常处理器-->
-
-<bean class="com.xdf.controller.resolver.MyExceptionResolver"/>
+<!--配置自定义的异常处理器
+<bean class="com.xdf.controller.resolver.MyExceptionResolver"/>-->
 
 
     <!--配置默认的视图解析器   把后台的逻辑视图解析成物理视图
