@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="09SpringValidator:war">
+    <output-path>$PROJECT_DIR$/09SpringValidator/target</output-path>
+    <root id="archive" name="09SpringValidator.war">
+      <element id="artifact" artifact-name="09SpringValidator:war exploded" />
+    </root>
+  </artifact>
+</component>
