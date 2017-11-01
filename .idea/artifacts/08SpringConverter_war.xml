@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="08SpringConverter:war">
+    <output-path>$PROJECT_DIR$/08SpringConverter/target</output-path>
+    <root id="archive" name="08SpringConverter.war">
+      <element id="artifact" artifact-name="08SpringConverter:war exploded" />
+    </root>
+  </artifact>
+</component>

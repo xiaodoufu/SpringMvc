@@ -13,6 +13,7 @@
       <module>05SpringAnnotation</module>
     <module>_06SpringForward_Redirect</module>
     <module>07SpringException</module>
+      <module>08SpringConverter</module>
   </modules>
   <name>SpringMvc Maven Webapp</name>
   <url>http://maven.apache.org</url>

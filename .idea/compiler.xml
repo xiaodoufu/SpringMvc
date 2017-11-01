@@ -16,6 +16,7 @@
         <module name="04SpringResolver (1)" />
         <module name="05SpringAnnotation" />
         <module name="07SpringException" />
+        <module name="08SpringConverter" />
         <module name="_06SpringForward_Redirect" />
       </profile>
     </annotationProcessing>
@@ -32,6 +33,7 @@
       <module name="06s" target="1.5" />
       <module name="06SpringRedirect" target="1.5" />
       <module name="07SpringException" target="1.5" />
+      <module name="08SpringConverter" target="1.5" />
       <module name="_06SpringForward_Redirect" target="1.5" />
       <module name="SpringMvc" target="1.5" />
       <module name="SpringMvc (1)" target="1.5" />
