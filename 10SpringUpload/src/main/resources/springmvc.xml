@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+
+
+    <!--现在使用注解 扫描指定的包下面的类-->
+    <context:component-scan base-package="com.xdf.controller"/>
+
+    <mvc:annotation-driven/>
+
+    <!--配置文件上传的解析器  ？？？
+    multipartResolver必须这么写！ 为什么？
+    因为DispatcherServlet中使用的属性名就是multipartResolver！
+    -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+      <property name="defaultEncoding" value="utf-8"/> <!--上传文件乱码-->
+      <property name="maxUploadSize"  value="314110000"/><!--所有文件总大小-->
+        <property name="maxUploadSizePerFile" value="3141100"/>
+    </bean>
+
+
+</beans>
