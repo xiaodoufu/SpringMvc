@@ -45,6 +45,7 @@
  <tx:advice id="myAdice" transaction-manager="transactionManager">
      <tx:attributes>
        <tx:method name="login" isolation="DEFAULT" propagation="REQUIRED"/>
+       <tx:method name="insertInto" isolation="DEFAULT" propagation="REQUIRED" rollback-for="java.lang.Exception"/>
      </tx:attributes>
  </tx:advice>
 

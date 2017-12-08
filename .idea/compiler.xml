@@ -20,6 +20,7 @@
         <module name="09SpringValidator" />
         <module name="10SpringUpload" />
         <module name="11SpringInterceptot" />
+        <module name="12SSM" />
         <module name="_06SpringForward_Redirect" />
       </profile>
     </annotationProcessing>
@@ -40,6 +41,7 @@
       <module name="09SpringValidator" target="1.5" />
       <module name="10SpringUpload" target="1.5" />
       <module name="11SpringInterceptot" target="1.5" />
+      <module name="12SSM" target="1.5" />
       <module name="_06SpringForward_Redirect" target="1.5" />
       <module name="SpringMvc" target="1.5" />
       <module name="SpringMvc (1)" target="1.5" />
